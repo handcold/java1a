@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <head lang="en">
+        <meta charset="utf-8">
+        <title>Goku to Super Saiyan</title>
+        <link rel="stylesheet" href="ninjatocat.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+        </script>
+        <script>
+        	$(document).ready(function(){
+        		$('img').click(function(){
+        			var equivalentimgSrc = $(this).attr('src');
+        				$(this).attr("src", $(this).attr('data-alt-src'))
+        				$(this).attr("data-alt-src", equivalentimgSrc)
+      			})
+        	})
+        </script>
+</head>
+<body>
+	<h1>Goku to Super Saiyan</h1>
+	<div id="container">
+		<div class="Goku">
+			<img src='goku1.jpg' data-alt-src='beyonce1.jpg' />
+			<img src='goku2.jpg' data-alt-src='beyonce2.jpg' />
+			<img src='goku3.jpg' data-alt-src='beyonce3.jpg' />
+			<img src='goku4.jpg' data-alt-src='beyonce4.jpg' />
+			<img src='goku5.jpg' data-alt-src='beyonce5.jpg' />
+	</div>
+</body>
+</html>
